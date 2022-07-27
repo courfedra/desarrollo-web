@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../img/shortCut.jpg">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="cabecera cabeceraMobile">
+        <div class="logo">
+            <img src="../img/DBVHeader.svg" alt="LogoDBV">
+        </div>
+        <nav class="navMobile">
+            <ul class="ulMobile">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="miVino.html">Mi Vino</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <form action="" method="get" enctype="application/x-www-form-urlencoded">
+            <fieldset class="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder=" Nombre">
+
+                <label for="correo">Correo</label>
+                <input type="mail" id="correo" name="correo" placeholder=" Correo@servidor.com">
+                
+                <label for="vino">Vino</label>
+                <select name="vino" id="vino">
+                    <option value="M">Malbec</option>
+                    <option value="T">Torrontes</option>
+                    <option value="B">Blend</option>
+                    <option value="O">Otro</option>
+                </select>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea placeholder=" Escribe tu mensaje aqui"></textarea>
+
+                <input type="button" name="enviar" value="Enviar" class="boton">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <img src="../img/Siglas-BUEN-VINOl.svg" alt="logoFooter">
+        <div class="info">
+            <ul>
+                <li><a href="nosotros.html" target="_blank">¿Quiénes somos?</a></li>
+                <li><a href="https://www.google.com/maps/place/Mendoza+Province,+Argentina/@-32.886269,-68.852443,14z/data=!4m5!3m4!1s0x9679745b5dd5fffd:0x902586f1d047824!8m2!3d-34.5869034!4d-68.1431414?hl=en" target="_blank">¿Dónde estamos?</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+            <ul>
+                <li>delbuenvino@gmail.com</li>
+                <li>2634567890</li>
+                <li>Calle Falsa 123</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

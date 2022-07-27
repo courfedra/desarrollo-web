@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Finlandica', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    color: #000;
+    background-color: #a5224e;
+}
+
+html{
+    background-color: #222;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+        'cabecera'
+        'cuerpo'
+        'pie';
+    grid-template-rows: 100px auto auto;
+}
+
+header{
+    grid-area: cabecera;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #a5224e;
+}
+
+header .logo{
+    width: 70%;
+    display: flex; 
+    justify-content: center; 
+}
+
+header .logo img{
+    width: 30%;
+}
+
+header nav{
+    width: 100%;     
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    letter-spacing: 2.5px;
+}
+
+header nav ul li a:hover{
+    color: #7933c0;
+    border-top: 2px solid #7933c0;    
+}
+
+/*Index*/
+.main{
+    grid-area: cuerpo;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    min-height: 80%;
+    background-color: #ffffff;   
+}
+
+section article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section article img{
+    width: 75%;
+}
+
+.imgMobile img{
+    display: none;
+}
+
+/*Contacto*/
+
+section form{
+    background-image: url("./img/viñedo.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+form fieldset label{
+    margin: 15px;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    
+}
+
+form fieldset input,select{
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #000;
+}
+
+fieldset textarea{
+    resize: none;
+    scrollbar-width: auto;
+    width: 50%;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #000;
+}
+
+form .boton{
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    background-color: #a5224e;
+    border: none;
+    border-radius: 5px;
+    font-size: large;  
+}
+
+form .boton:hover{
+    background-color: #7933c0;
+}
+form .boton:active{
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+/*Nosotros*/
+
+.nosotros{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    padding: 1% 0;
+    background-image: url("img/bodega.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nosotros .box{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.8);
+    border-radius: 5px;
+    margin: 1% 0;
+}
+
+.nosotros .boxLarge{
+    width: 90%; 
+}
+
+.nosotros .box h3{
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.nosotros .box p{
+    color: #fff;
+}
+
+/*Mi Vino*/
+
+.miVino{
+    display: inline-block;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(121,51,192,1) 100%);
+    text-align: center;
+}
+
+.miVino h3{
+    margin: 10px;
+    font-size: 1.7em;
+    text-decoration-line: underline;
+}
+
+.miVino ol li{
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.miVino .miVinoVideo{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.miVino .miVinoVideo iframe{
+    width: 500px;
+    height: 300px;
+}
+
+.miVino .miVinoPasos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.miVino .miVinoPasos .pasos{
+    width: 100vh;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;   
+}
+
+.miVino .miVinoPasos .pasos h4{
+    margin-bottom: 5px;
+    border-bottom: 2px solid #7933c0;
+}
+
+.miVino .miVinoPasos .pasos img{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.miVino button{
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    background-color: #a5224e;
+    border: none;
+    border-radius: 5px;
+    font-size: large; 
+}
+
+.miVino button:hover{
+    background-color: #ffffff;
+}
+
+/*Carrito*/
+
+.grilla{
+    font-size: 10px;
+}
+
+.venta{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25em,1fr));
+    justify-items: center;
+    align-items: center;
+    grid-auto-rows: auto;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.venta .producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items:flex-end;
+    margin: 1em;
+    min-width: 20em;
+    min-height: 40em;
+    padding: 0 2em;
+    border-radius: 1em;
+    border: .2em solid #7933c0;
+    background-color: rgba(121,51,192,0.5);
+    filter: grayscale(1);
+    filter: blur(2.5px);
+}
+
+.venta .producto:hover{
+    filter: grayscale(0);
+    background-color: #fff;
+}
+
+.venta .producto img{
+    display: 100%;
+    border-radius: 5px;
+
+}
+.venta .producto h4{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #a5224e;
+    letter-spacing: 4px;
+}
+.venta .producto .precio{
+    color: green;
+    font-size: 2em;
+}
+
+.venta .producto .precio::before{
+    content: "$";
+}
+
+.venta .boton{
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    background-color: #1db91d;
+    margin-bottom: .5em;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    text-transform:uppercase;
+}
+
+.venta .boton:hover{
+    background-color: #7933c0;
+}
+
+/*Footer*/
+
+footer{
+    grid-area: pie;
+    background-color: #222;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    padding-left: 5%;
+    width: 15%;
+}
+
+footer .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+footer .info ul li{
+    padding: 5px;
+    list-style: none;
+    color: #ffffff;
+}
+
+footer .info ul li a:hover{
+    color: #7933c0;
+}
+
+footer .info ul li a{
+    color: #ffffff;
+}
+
+/*--- MEDIA --- MOBILE ---*/
+
+@media screen and (max-width: 900px){
+    
+    body{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        'cabeceraM'
+        'cuerpoM'
+        'pieM';
+        grid-template-rows: auto auto 1fr;
+
+    }
+
+    /*HEADER MOBILE*/
+
+    .cabeceraMobile{
+        grid-area: cabeceraM;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .logoMobile{
+        height: 100%;
+    }
+
+    .navMobile{
+        background-color: #a5224e;
+        height: 100%;
+    }
+
+    .navMobile .ulMobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: .5%;
+    }
+
+    .navMobile .ulMobile li a{
+        margin: 0 2px;
+    }
+
+    /*MAIN MOBILE*/
+
+    .main{
+        grid-area: cuerpoM;
+        min-height: 40vh;
+        max-height: 250vh;
+    }
+
+    /*INDEX*/
+
+    .imgDesktop img{
+        display: none;
+    }
+
+    .imgMobile img{
+        display: inline;
+    }
+
+    .imgMobile{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    /*NOSOTROS MOBILE*/
+
+    .nosotros{
+        min-height: 80vh;
+        height: auto;
+        max-height: 100vh;
+    }
+
+    .nosotros .box{
+        position: static;
+        font-size: 12px;
+        width: 80%;
+        margin: 2px 0;
+    }
+
+    /*MI VINO MOBILE*/
+
+    .miVino h3{
+        margin: 10px 0;
+        font-size: 1em;
+        text-decoration-line: underline;
+    }
+    
+    .miVino .miVinoVideo iframe{
+        width: 250px;
+        height: 150px;
+    }
+    
+    .miVino .miVinoPasos .pasos{
+        width: auto;
+    }
+
+    .miVino .miVinoPasos .pasos img{
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    /*FOOTER MOBILE*/
+
+    footer{
+        grid-area: pieM;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer img{
+        display: none;
+    }
+
+    footer .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .info ul{
+        text-align: center;
+        margin: 5px 0;
+    }
+
+}
