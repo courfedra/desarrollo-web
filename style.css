@@ -58,18 +58,22 @@ header nav ul{
 }
 
 header nav .transNav li{
-    transition: all .3s;
+    transition: all .25s;
+}
+
+header nav .transNav li a{
+    transition: all .25s;
 }
 
 header nav .transNav li:hover{
     transform: rotate(-10deg);
     border-top: 2px solid #7933c0;
-    transition: all .3s;
+    transition: all .25s;
 }
 
 header nav ul li a:hover{
     color: #7933c0;
-    transition: color .3s;
+    transition: color .25s;
 }
 
 
