@@ -35,13 +35,7 @@ header{
     background-color: #a5224e;
 }
 
-header .logo{
-    width: 70%;
-    display: flex; 
-    justify-content: center; 
-}
-
-header .logo img{
+header nav a img{
     width: 30%;
 }
 
@@ -75,7 +69,6 @@ header nav ul li a:hover{
     color: #7933c0;
     transition: color .25s;
 }
-
 
 /*Index*/
 .main{
@@ -263,7 +256,7 @@ form .boton:active{
     margin-top: 10px;
 }
 
-.miVino button{
+.miVino .botonVino{
     width: 100px;
     height: 50px;
     margin: 15px;
@@ -271,9 +264,10 @@ form .boton:active{
     border: none;
     border-radius: 5px;
     font-size: large; 
+
 }
 
-.miVino button:hover{
+.miVino .botonVino:hover{
     background-color: #ffffff;
 }
 
@@ -464,7 +458,7 @@ footer .info ul li a{
     .nosotros{
         min-height: 80vh;
         height: auto;
-        max-height: 100vh;
+        max-height: 150vh;
     }
 
     .nosotros .box{
