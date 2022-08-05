@@ -14,10 +14,6 @@
     background-color: #a5224e;
 }
 
-html{
-    background-color: #222;
-}
-
 body{
     display: grid;
     grid-template-areas: 
@@ -65,12 +61,13 @@ header nav .transNav li:hover{
     transition: all .25s;
 }
 
-header nav ul li a:hover{
+header nav .transNav li a:hover{
     color: #7933c0;
     transition: color .25s;
 }
 
 /*Index*/
+
 .main{
     grid-area: cuerpo;
     height: 100%;
@@ -103,6 +100,7 @@ section form{
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 70vh;
 }
 
 fieldset textarea{
@@ -127,7 +125,6 @@ form .boton:hover{
 form .boton:active{
     border: 1px solid black;
     background-color: #fff;
-    
 }
 
 /*Nosotros*/
@@ -236,8 +233,12 @@ form .boton:active{
     background-color: #a5224e;
     border: none;
     border-radius: 5px;
-    font-size: large; 
+    font-size: large;
+}
 
+.botonVino a{
+    text-decoration: none;
+    color: #000;
 }
 
 .botonVino:hover{
@@ -287,14 +288,15 @@ form .boton:active{
 .venta .producto img{
     display: 100%;
     border-radius: 5px;
-
 }
+
 .venta .producto h4{
-    font-size: 1.5em;
+    font-size: 2em;
     text-transform: uppercase;
     color: #a5224e;
-    letter-spacing: 4px;
+    letter-spacing: 4.5px;
 }
+
 .venta .producto .precio{
     color: green;
     font-size: 2em;
@@ -358,7 +360,8 @@ footer .info ul li a{
 
 /*--- MEDIA --- MOBILE ---*/
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px)
+{
     
     body{
         height: 100%;
@@ -402,11 +405,37 @@ footer .info ul li a{
         margin: 0 2px;
     }
 
+    header nav .transNav li{
+        transition: all .25s;
+    }
+    
+    header nav .transNav li a{
+        transition: all .25s;
+    }
+
+    header nav .transNav li:hover{
+        transform: none;
+    }
+    
+    header nav .transNav li a:hover{
+        transform: none;
+    }
+    
+    header nav .transNav li:active{
+        transform: translateX(100px);
+        transition: all .25s;
+    }
+    
+    header nav .transNav li a:active{
+        color: #7933c0;
+        transition: color .25s;
+    }
+
     /*MAIN MOBILE*/
 
     .main{
         grid-area: cuerpoM;
-        min-height: 40vh;
+        min-height: 60vh;
         max-height: 250vh;
     }
 
