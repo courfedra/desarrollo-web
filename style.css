@@ -406,6 +406,26 @@ footer .info ul li a{
     }
 
     header nav .transNav li{
+        transition: none;
+    }
+    
+    header nav .transNav li a{
+        transition: none;
+    }
+    
+    header nav .transNav li:hover{
+        transform: none;
+        border-top: none;
+        transition: none;
+    }
+    
+    header nav .transNav li a:hover{
+        color: #7933c0;
+        transition: none;
+    }
+
+/*
+    header nav .transNav li{
         transition: all .25s;
     }
     
@@ -429,7 +449,7 @@ footer .info ul li a{
     header nav .transNav li a:active{
         color: #7933c0;
         transition: color .25s;
-    }
+    }*/
 
     /*MAIN MOBILE*/
 
