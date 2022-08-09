@@ -406,29 +406,22 @@ footer .info ul li a{
     }
 
     header nav .transNav li{
-        transition: all .25s;
+        transition: none;
     }
     
     header nav .transNav li a{
-        transition: all .25s;
+        transition: none;
     }
-
+    
     header nav .transNav li:hover{
         transform: none;
+        border-top: none;
+        transition: none;
     }
     
     header nav .transNav li a:hover{
-        transform: none;
-    }
-    
-    header nav .transNav li:active{
-        transform: translateX(100px);
-        transition: all .25s;
-    }
-    
-    header nav .transNav li a:active{
         color: #7933c0;
-        transition: color .25s;
+        transition: none;
     }
 
     /*MAIN MOBILE*/

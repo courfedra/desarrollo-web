@@ -1,0 +1,33 @@
+.nosotros{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    padding: 1% 0;
+    background-image: url("../img/bodega.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: auto;
+        text-align: center;
+        background-color: $fondoNosotros;
+        border-radius: 5px;
+        margin: 1% 0;
+        h3{
+            color: $blanco;
+            letter-spacing: 5px;
+        }
+        p{
+            color: $blanco;
+        }
+    }
+    .boxLarge{
+        width: 90%; 
+    }
+} 

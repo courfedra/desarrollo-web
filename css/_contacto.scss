@@ -1,0 +1,29 @@
+section form{
+    background-image: url("../img/viñedo.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    fieldset textarea{
+        resize: none;
+        scrollbar-width: auto;
+    }
+    .boton{
+        width: 100px;
+        height: 50px;
+        margin: 15px;
+        background-color: $violVino;
+        border: none;
+        border-radius: 5px;
+        font-size: large;
+        &:hover{
+            background-color: $violOscuro;
+        }
+        &:active{
+            border: 1px solid $negro;
+            background-color: $blanco;
+        }
+    }
+}
+
+

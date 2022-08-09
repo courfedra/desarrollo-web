@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $negro;
+    font-family: 'Finlandica', sans-serif;
+    scroll-behavior: smooth;
+    &::selection{
+        color: $negro;
+        background-color: $violVino;
+    }
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+        'cabecera'
+        'cuerpo'
+        'pie';
+    grid-template-rows: 100px auto auto;
+}
+
+header{
+    grid-area: cabecera;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $violVino;
+    nav{
+        width: 100%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: larger;
+            letter-spacing: 2.5px;
+        }
+        a img{
+            width: 30%;
+        }
+        .transNav li{
+            transition: all .25s;
+            a{
+                transition: all .25s;
+                &:hover{
+                    color: $violVino;
+                    transition: color .25s;
+                }
+            }
+            &:hover{
+                transform: rotate(-10deg);
+                border-top: 2px solid $violVino;
+                transition: all .25s;
+            }
+        }   
+    }
+}
