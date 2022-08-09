@@ -1,0 +1,149 @@
+@media screen and (max-width: 900px)
+{ 
+    body{
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+        'cabeceraM'
+        'cuerpoM'
+        'pieM';
+        grid-template-rows: auto auto 1fr;
+    }
+
+    /*HEADER MOBILE*/
+
+    .cabeceraMobile{
+        grid-area: cabeceraM;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .logoMobile{
+        height: 100%;
+    }
+
+    .navMobile{
+        background-color: $violVino;
+        height: 100%;
+    }
+
+    .navMobile .ulMobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: .5%;
+    }
+
+    .navMobile .ulMobile li a{
+        margin: 0 2px;
+    }
+
+    header nav .transNav li{
+        transition: none;
+    }
+    
+    header nav .transNav li a{
+        transition: none;
+    }
+    
+    header nav .transNav li:hover{
+        transform: none;
+        border-top: none;
+        transition: none;
+    }
+    
+    header nav .transNav li a:hover{
+        color: $violOscuro;
+        transition: none;
+    }
+
+    /*MAIN MOBILE*/
+
+    .main{
+        grid-area: cuerpoM;
+        min-height: 60vh;
+        max-height: 250vh;
+    }
+
+    /*INDEX*/
+
+    .imgDesktop img{
+        display: none;
+    }
+
+    .imgMobile img{
+        display: inline;
+    }
+
+    .imgMobile{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    /*NOSOTROS MOBILE*/
+
+    .nosotros{
+        min-height: 80vh;
+        height: auto;
+        max-height: 150vh;
+    }
+
+    .nosotros .box{
+        position: static;
+        font-size: 12px;
+        width: 80%;
+        margin: 2px 0;
+    }
+
+    /*MI VINO MOBILE*/
+
+    .miVino h3{
+        margin: 10px 0;
+        font-size: 1em;
+        text-decoration-line: underline;
+    }
+    
+    .miVino .miVinoVideo iframe{
+        width: 250px;
+        height: 150px;
+    }
+    
+    .miVino .miVinoPasos .pasos{
+        width: auto;
+    }
+
+    .miVino .miVinoPasos .pasos img{
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    /*FOOTER MOBILE*/
+
+    footer{
+        grid-area: pieM;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer img{
+        display: none;
+    }
+
+    footer .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .info ul{
+        text-align: center;
+        margin: 5px 0;
+    }
+
+}

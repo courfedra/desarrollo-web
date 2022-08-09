@@ -1,0 +1,31 @@
+
+footer{
+    grid-area: pie;
+    background-color: $fondoFooter;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img{
+        padding-left: 5%;
+        width: 15%;
+    }
+    .info{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    ul{
+        li{
+            padding: 5px;
+            list-style: none;
+            color: $blanco;
+            a{
+                color: $blanco;
+                &::hover{
+                    color: $violOscuro;
+                }
+            }
+        }
+    }
+}

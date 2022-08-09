@@ -1,0 +1,21 @@
+.main{
+    grid-area: cuerpo;
+    height: 100%;
+    width: 100%;
+    min-height: 80%;
+    background-color: $blanco;
+    article{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 75%;
+        }
+    }    
+}
+
+.imgMobile{
+    img{
+        display: none;
+    }
+} 
