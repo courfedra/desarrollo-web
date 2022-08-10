@@ -213,6 +213,9 @@ section form .boton:active {
   background-color: #7933c0;
   text-align: center;
 }
+.minCard .minTexto {
+  min-height: 25vh;
+}
 .minCard .precio {
   color: #1db91d;
 }
@@ -220,22 +223,41 @@ section form .boton:active {
   background-color: #a5224e;
   width: 100%;
   color: #000000;
+  -webkit-animation: sombraNeon 1s linear 0s infinite alternate;
+          animation: sombraNeon 1s linear 0s infinite alternate;
 }
 .minCard .botonVino:hover {
-  background-color: #1db91d;
   color: #ffffff;
 }
 
+@-webkit-keyframes sombraNeon {
+  0% {
+    box-shadow: 2px 2px 10px 10px #5fff5f;
+  }
+  100% {
+    box-shadow: 2px 2px 10px 5px #00ff00;
+  }
+}
+
+@keyframes sombraNeon {
+  0% {
+    box-shadow: 2px 2px 10px 10px #5fff5f;
+  }
+  100% {
+    box-shadow: 2px 2px 10px 5px #00ff00;
+  }
+}
 footer {
   grid-area: pie;
   background-color: #222222;
   width: 100%;
+  /*min-height: 30vh;*/
   display: flex;
   justify-content: space-between;
 }
 footer img {
   padding-left: 5%;
-  width: 15%;
+  width: 25%;
 }
 footer .info {
   width: 100%;
