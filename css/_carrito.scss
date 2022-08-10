@@ -2,6 +2,9 @@
     min-height: 100vh;
     background-color: $violOscuro;
     text-align: center;
+    .minTexto{
+        min-height: 25vh;
+    }
     .precio{
         color: $btnCompra;
     }
@@ -9,11 +12,19 @@
         background-color: $violVino;
         width: 100%;
         color: $negro;
+        animation: sombraNeon 1s linear 0s infinite alternate;;
         &:hover{
-            background-color: $btnCompra;
             color: $blanco;
         }
     }
-    
+}
+
+@keyframes sombraNeon{
+    0%{
+        box-shadow: 2px 2px 10px 10px $neon1;
+    }
+    100%{
+        box-shadow:  2px 2px 10px 5px $neon2;
+    }
 }
 
