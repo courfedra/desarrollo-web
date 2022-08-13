@@ -208,26 +208,35 @@ section form .boton:active {
   background-color: #ffffff;
 }
 
-.minCard {
+.minCard, .lastCard {
   min-height: 100vh;
   background-color: #7933c0;
+  box-shadow: 2px 2px 15px 2px #a5224e;
   text-align: center;
 }
-.minCard .minTexto {
+.minCard .minTexto, .lastCard .minTexto {
   min-height: 25vh;
 }
-.minCard .precio {
+.minCard .precio, .lastCard .precio {
   color: #1db91d;
 }
-.minCard .botonVino {
+.minCard .botonVino, .lastCard .botonVino {
   background-color: #a5224e;
-  width: 100%;
+  width: 75%;
   color: #000000;
   -webkit-animation: sombraNeon 1s linear 0s infinite alternate;
           animation: sombraNeon 1s linear 0s infinite alternate;
 }
-.minCard .botonVino:hover {
+.minCard .botonVino:hover, .lastCard .botonVino:hover {
   color: #ffffff;
+  background-color: #5fff5f;
+  -webkit-animation: none;
+          animation: none;
+  box-shadow: 2px 2px 50px 10px #5fff5f;
+}
+
+.lastCard {
+  background-color: #ffffff;
 }
 
 @-webkit-keyframes sombraNeon {
@@ -235,7 +244,7 @@ section form .boton:active {
     box-shadow: 2px 2px 10px 10px #5fff5f;
   }
   100% {
-    box-shadow: 2px 2px 10px 5px #00ff00;
+    box-shadow: 2px 2px 50px 2px #a5224e;
   }
 }
 
@@ -244,7 +253,7 @@ section form .boton:active {
     box-shadow: 2px 2px 10px 10px #5fff5f;
   }
   100% {
-    box-shadow: 2px 2px 10px 5px #00ff00;
+    box-shadow: 2px 2px 50px 2px #a5224e;
   }
 }
 footer {
