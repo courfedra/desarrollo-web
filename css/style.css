@@ -141,57 +141,61 @@ section form .boton:active {
   width: 90%;
 }
 
-.miVino {
+main {
+  width: 100%;
+}
+main .miVino {
   display: inline-block;
+  width: 100%;
   background: linear-gradient(180deg, #ffffff, #7933c0);
   text-align: center;
 }
-.miVino h3 {
+main .miVino h3 {
   margin: 10px;
   font-size: 1.7em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-.miVino ol li {
+main .miVino ol li {
   padding: 5px;
   font-size: 1.1em;
 }
-.miVino .miVinoVideo {
+main .miVino .miVinoVideo {
   display: inline-block;
   text-align: center;
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.miVino .miVinoVideo iframe {
+main .miVino .miVinoVideo iframe {
   width: 500px;
   height: 300px;
 }
-.miVino .miVinoPasos {
+main .miVino .miVinoPasos {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   flex-direction: column;
 }
-.miVino .miVinoPasos .pasos {
-  width: 100vh;
-  margin: 15px;
+main .miVino .miVinoPasos .pasos {
+  width: 100%;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-.miVino .miVinoPasos .pasos h4 {
+main .miVino .miVinoPasos .pasos h4 {
   margin-bottom: 5px;
   border-bottom: 2px solid #7933c0;
 }
-.miVino .miVinoPasos .pasos img {
+main .miVino .miVinoPasos .pasos img {
   border-radius: 10px;
   margin-top: 10px;
   width: 50%;
 }
-.miVino .botonVino {
+main .miVino .botonVino {
   width: 100px;
   height: 50px;
   margin: 15px;
@@ -200,11 +204,11 @@ section form .boton:active {
   border-radius: 5px;
   font-size: large;
 }
-.miVino .botonVino a {
+main .miVino .botonVino a {
   text-decoration: none;
   color: #000000;
 }
-.miVino .botonVino:hover {
+main .miVino .botonVino:hover {
   background-color: #ffffff;
 }
 
@@ -291,7 +295,7 @@ footer ul li a::hover {
     height: 100%;
     display: grid;
     grid-template-areas: "cabeceraM" "cuerpoM" "pieM";
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: 1fr;
   }
   /*HEADER MOBILE*/
   .cabeceraMobile {
@@ -364,23 +368,41 @@ footer ul li a::hover {
     margin: 2px 0;
   }
   /*MI VINO MOBILE*/
-  .miVino h3 {
-    margin: 10px 0;
-    font-size: 1em;
+  .miVino .miVinoVideo h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+    width: 90%;
+    padding: 15px;
   }
   .miVino .miVinoVideo iframe {
-    width: 250px;
-    height: 150px;
+    max-width: 250px;
+    max-height: 150px;
   }
   .miVino .miVinoPasos .pasos {
-    width: auto;
+    width: 90%;
   }
   .miVino .miVinoPasos .pasos img {
     border-radius: 10px;
     margin-top: 10px;
     width: 50%;
+  }
+  /*CARRITO*/
+  .container-mobile {
+    min-width: 0;
+    min-height: 0;
+  }
+  .container-mobile .minCard, .container-mobile .lastCard {
+    min-height: 0;
+    align-items: center;
+  }
+  .container-mobile .minCard img, .container-mobile .lastCard img {
+    max-width: 50%;
+  }
+  .container-mobile .minCard .minTexto, .container-mobile .lastCard .minTexto {
+    min-height: 0;
+    max-height: 50vh;
   }
   /*FOOTER MOBILE*/
   footer {

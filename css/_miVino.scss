@@ -1,68 +1,72 @@
-
-.miVino{
-    display: inline-block;
-    background: $gradienteVino;
-    text-align: center;
-    h3{
-        margin: 10px;
-        font-size: 1.7em;
-        text-decoration-line: underline;
-    }
-    ol{
-        li{
-            padding: 5px;
-            font-size: 1.1em;
-        }
-    }
-    .miVinoVideo{
+main{
+    width: 100%;
+    .miVino{
         display: inline-block;
-        text-align: center;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        iframe{
-            width: 500px;
-            height: 300px;
-        }
-    }
-    .miVinoPasos{
-        display: flex;
-        justify-content: space-between;
         width: 100%;
-        align-items: center;
-        flex-direction: column;
-        .pasos{
-            width: 100vh;
-            margin: 15px;
-            display: flex;
-            flex-direction: column;
+        background: $gradienteVino;
+        text-align: center;
+        h3{
+            margin: 10px;
+            font-size: 1.7em;
+            text-decoration-line: underline;
+        }
+        ol{
+            li{
+                padding: 5px;
+                font-size: 1.1em;
+            }
+        }
+        .miVinoVideo{
+            display: inline-block;
             text-align: center;
             align-items: center;
-            h4{
-                margin-bottom: 5px;
-                border-bottom: 2px solid $violOscuro;
-            }
-            img{
-                border-radius: 10px;
-                margin-top: 10px;
-                width: 50%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            iframe{
+                width: 500px;
+                height: 300px;
             }
         }
-    }
-    .botonVino{
-        width: 100px;
-        height: 50px;
-        margin: 15px;
-        background-color: $violVino;
-        border: none;
-        border-radius: 5px;
-        font-size: large;
-        a{
-            text-decoration: none;
-            color: $negro;   
+        .miVinoPasos{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            .pasos{
+                width: 100%;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                h4{
+                    margin-bottom: 5px;
+                    border-bottom: 2px solid $violOscuro;
+                }
+                img{
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    width: 50%;
+                }
+            }
         }
-        &:hover{
-            background-color: $blanco;
+        .botonVino{
+            width: 100px;
+            height: 50px;
+            margin: 15px;
+            background-color: $violVino;
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+            a{
+                text-decoration: none;
+                color: $negro;   
+            }
+            &:hover{
+                background-color: $blanco;
+            }
         }
     }
 }
+

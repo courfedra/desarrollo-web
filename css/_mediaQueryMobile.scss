@@ -7,7 +7,7 @@
         'cabeceraM'
         'cuerpoM'
         'pieM';
-        grid-template-rows: auto auto 1fr;
+        grid-template-rows: 1fr;
     }
 
     /*HEADER MOBILE*/
@@ -101,26 +101,47 @@
 
     /*MI VINO MOBILE*/
 
-    .miVino h3{
-        margin: 10px 0;
-        font-size: 1em;
-        text-decoration-line: underline;
+    .miVino{ 
+        .miVinoVideo{  
+            h3{
+                margin: 5px 0;
+                font-size: 1.1em;
+                text-decoration-line: underline;
+                width: 90%;
+                padding: 15px;
+            }
+            iframe{
+                max-width: 250px;
+                max-height: 150px;
+            }
+        }
+        .miVinoPasos .pasos{
+            width: 90%;
+        }
     }
-    
-    .miVino .miVinoVideo iframe{
-        width: 250px;
-        height: 150px;
-    }
-    
-    .miVino .miVinoPasos .pasos{
-        width: auto;
-    }
-
     .miVino .miVinoPasos .pasos img{
         border-radius: 10px;
         margin-top: 10px;
         width: 50%;
     }
+
+    /*CARRITO*/
+    .container-mobile{
+        min-width: 0;
+        min-height: 0;
+        .minCard{
+            min-height: 0;
+            align-items: center;
+            img{
+                max-width: 50%;
+            };
+            .minTexto{
+                min-height: 0;
+                max-height: 50vh;
+            }
+        }
+    }
+    
 
     /*FOOTER MOBILE*/
 
