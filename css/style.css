@@ -59,6 +59,13 @@ header nav .transNav li:hover {
   transition: all 0.25s;
 }
 
+.tittleH {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   grid-area: cuerpo;
   height: 100%;
@@ -85,6 +92,16 @@ section form {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 70vh;
+}
+section form .tittleH {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+section form .tittleH .fondoH {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 section form fieldset textarea {
   resize: none;
@@ -119,6 +136,19 @@ section form .boton:active {
   background-image: url("../img/bodega.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+.nosotros .tittleH {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.nosotros .tittleH h2 {
+  color: #ffffff;
+}
+.nosotros .tittleH .fondoH {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
 }
 .nosotros .box {
   display: flex;
@@ -171,10 +201,157 @@ main .miVino .miVinoVideo iframe {
   width: 500px;
   height: 300px;
 }
+main .miVino .misVinos {
+  width: 100%;
+  padding: 20px 0;
+}
+main .miVino .misVinos .botonera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+main .miVino .misVinos .botonera .malbec {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #7a0126;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .malbec:hover {
+  background-color: #7a0126;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #7a0126;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .torrontes {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #ddf757;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .torrontes:hover {
+  background-color: #ddf757;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #ddf757;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .syrah {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #7d0651;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .syrah:hover {
+  background-color: #7d0651;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #7d0651;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .espumante {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #ffe570;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .espumante:hover {
+  background-color: #ffe570;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #ffe570;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .cabSauvignon {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #b0105b;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .cabSauvignon:hover {
+  background-color: #b0105b;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #b0105b;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .chardonnay {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #e7f58c;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .chardonnay:hover {
+  background-color: #e7f58c;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #e7f58c;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .pinotNoir {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #590238;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .pinotNoir:hover {
+  background-color: #590238;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #590238;
+  transform: scale(1.25);
+}
+main .miVino .misVinos .botonera .redBlend {
+  background-color: none;
+  min-height: 50px;
+  min-width: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #b8003d;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.5s all ease-in-out;
+}
+main .miVino .misVinos .botonera .redBlend:hover {
+  background-color: #b8003d;
+  color: #000000;
+  box-shadow: 2px 2px 6px 5px #b8003d;
+  transform: scale(1.25);
+}
 main .miVino .miVinoPasos {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 20px 0;
   align-items: center;
   flex-direction: column;
 }
@@ -212,9 +389,16 @@ main .miVino .botonVino:hover {
   background-color: #ffffff;
 }
 
+.tittleH {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .minCard, .lastCard {
   min-height: 100vh;
-  background-color: #7933c0;
+  background-color: rgba(121, 51, 192, 0.5);
   box-shadow: 2px 2px 15px 2px #a5224e;
   text-align: center;
 }
@@ -264,7 +448,6 @@ footer {
   grid-area: pie;
   background-color: #222222;
   width: 100%;
-  /*min-height: 30vh;*/
   display: flex;
   justify-content: space-between;
 }
@@ -423,5 +606,4 @@ footer ul li a::hover {
     text-align: center;
     margin: 5px 0;
   }
-}
-/*test1*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,21 @@
+//Sección Contacto
+
 section form{
     background-image: url("../img/viñedo.jpg");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 70vh;
+    .tittleH{
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        .fondoH{
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 5px;
+        }
+    }
     fieldset textarea{
         resize: none;
         scrollbar-width: auto;

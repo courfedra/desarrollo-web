@@ -2,10 +2,25 @@ $negro:#000000;
 $blanco:#ffffff;
 $violOscuro:#7933c0;
 $violVino:#a5224e;
-$fondoNosotros:rgba(0,0,0,0.8);
-$fondoCarrito:rgba(121,51,192,0.5);
-$gradienteVino:linear-gradient(180deg,$blanco,$violOscuro);
 $btnCompra:#1db91d;
 $fondoFooter:#222222;
 $neon1:#5fff5f;
 $neon2:$violVino;
+
+$gradientes:(
+    'gNosotros':rgba(0,0,0,0.8),
+    'gCarrito':rgba(121,51,192,0.5),
+    'gVino':linear-gradient(180deg,$blanco,$violOscuro),
+);
+
+$coloresVinos:(
+    'malbec':#7a0126,
+    'syrah':#7d0651,
+    'torrontes':#ddf757,
+    'espumante':#ffe570,
+    'cabSauvignon':#b0105b,
+    'chardonnay':#e7f58c,
+    'pinotNoir':#590238,
+    'redBlend':#b8003d,
+    
+);
