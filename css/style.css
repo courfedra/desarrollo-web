@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/*Seccion Index Imports*/
 @import url("https://fonts.googleapis.com/css2?family=Finlandica&display=swap");
+/*Seccion Variables*/
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,7 @@ body {
   grid-template-rows: 100px auto auto;
 }
 
+/*Seccion Header Nav*/
 header {
   grid-area: cabecera;
   width: 100%;
@@ -59,6 +62,7 @@ header nav .transNav li:hover {
   transition: all 0.25s;
 }
 
+/*Sección Index*/
 .tittleH {
   width: 100%;
   padding: 10px 0;
@@ -86,6 +90,7 @@ header nav .transNav li:hover {
   display: none;
 }
 
+/*Sección Contacto*/
 section form {
   background-image: url("../img/viñedo.jpg");
   background-position: bottom;
@@ -124,6 +129,7 @@ section form .boton:active {
   background-color: #ffffff;
 }
 
+/*Seccion Nosotros*/
 .nosotros {
   position: relative;
   display: flex;
@@ -171,6 +177,7 @@ section form .boton:active {
   width: 90%;
 }
 
+/*Seccion Mi Vino*/
 main {
   width: 100%;
 }
@@ -389,6 +396,7 @@ main .miVino .botonVino:hover {
   background-color: #ffffff;
 }
 
+/*Sección Carrito*/
 .tittleH {
   width: 100%;
   padding: 10px 0;
@@ -444,6 +452,7 @@ main .miVino .botonVino:hover {
     box-shadow: 2px 2px 50px 2px #a5224e;
   }
 }
+/*Seccion Footer*/
 footer {
   grid-area: pie;
   background-color: #222222;
@@ -473,6 +482,7 @@ footer ul li a::hover {
   color: #7933c0;
 }
 
+/*Seccion Mobile*/
 @media screen and (max-width: 991px) {
   body {
     height: 100%;
@@ -526,7 +536,7 @@ footer ul li a::hover {
     min-height: 60vh;
     max-height: 250vh;
   }
-  /*INDEX*/
+  /*INDEX MOBILE*/
   .imgDesktop img {
     display: none;
   }
@@ -571,7 +581,7 @@ footer ul li a::hover {
     margin-top: 10px;
     width: 50%;
   }
-  /*CARRITO*/
+  /*CARRITO MOBILE*/
   .container-mobile {
     min-width: 0;
     min-height: 0;

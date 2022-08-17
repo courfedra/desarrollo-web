@@ -8,6 +8,7 @@
     &::selection{
         color: $negro;
         background-color: $violVino;
+        
     }
 }
 
@@ -19,7 +20,7 @@ body{
         'pie';
     grid-template-rows: 100px auto auto;
 }
-
+/*Seccion Header Nav*/
 header{
     grid-area: cabecera;
     width: 100%;
