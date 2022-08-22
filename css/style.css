@@ -70,19 +70,19 @@ header nav .transNav li:hover {
   justify-content: center;
 }
 
-.main {
+.img-index {
   grid-area: cuerpo;
   height: 100%;
   width: 100%;
   min-height: 80%;
   background-color: #ffffff;
 }
-.main article {
+.img-index article {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.main article img {
+.img-index article img {
   width: 75%;
 }
 
@@ -536,7 +536,7 @@ footer ul li a::hover {
     min-height: 60vh;
     max-height: 250vh;
   }
-  /*INDEX MOBILE*/
+  /*INDEX*/
   .imgDesktop img {
     display: none;
   }
@@ -581,7 +581,7 @@ footer ul li a::hover {
     margin-top: 10px;
     width: 50%;
   }
-  /*CARRITO MOBILE*/
+  /*CARRITO*/
   .container-mobile {
     min-width: 0;
     min-height: 0;
