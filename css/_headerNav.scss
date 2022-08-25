@@ -37,7 +37,8 @@ header{
             letter-spacing: 2.5px;
         }
         a img{
-            width: 30%;
+            width: 25%;
+            overflow: hidden;
         }
         .transNav li{
             transition: all .25s;

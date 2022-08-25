@@ -16,24 +16,32 @@ section form{
             border-radius: 5px;
         }
     }
-    fieldset textarea{
-        resize: none;
-        scrollbar-width: auto;
-    }
-    .boton{
-        width: 100px;
-        height: 50px;
-        margin: 15px;
-        background-color: $violVino;
-        border: none;
-        border-radius: 5px;
-        font-size: large;
-        &:hover{
-            background-color: $violOscuro;
+    fieldset {
+        textarea{
+            resize: none;
+            scrollbar-width: auto;
         }
-        &:active{
-            border: 1px solid $negro;
-            background-color: $blanco;
+    }
+
+    .btn-contacto{
+        display:flex;
+        width: 100%;
+        justify-content: center;
+        .boton{
+            width: 100px;
+            height: 50px;
+            margin: 15px;
+            background-color: $violVino;
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+            &:hover{
+                background-color: $violOscuro;
+            }
+            &:active{
+                border: 1px solid $negro;
+                background-color: $blanco;
+            }
         }
     }
 }

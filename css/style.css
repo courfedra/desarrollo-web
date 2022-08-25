@@ -44,7 +44,8 @@ header nav ul {
   letter-spacing: 2.5px;
 }
 header nav a img {
-  width: 30%;
+  width: 25%;
+  overflow: hidden;
 }
 header nav .transNav li {
   transition: all 0.25s;
@@ -112,7 +113,12 @@ section form fieldset textarea {
   resize: none;
   scrollbar-width: auto;
 }
-section form .boton {
+section form .btn-contacto {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+section form .btn-contacto .boton {
   width: 100px;
   height: 50px;
   margin: 15px;
@@ -121,10 +127,10 @@ section form .boton {
   border-radius: 5px;
   font-size: large;
 }
-section form .boton:hover {
+section form .btn-contacto .boton:hover {
   background-color: #7933c0;
 }
-section form .boton:active {
+section form .btn-contacto .boton:active {
   border: 1px solid #000000;
   background-color: #ffffff;
 }
@@ -145,6 +151,7 @@ section form .boton:active {
 }
 .nosotros .tittleH {
   width: 100%;
+  max-height: 10vh;
   padding: 10px 0;
   display: flex;
   justify-content: center;
